@@ -10,3 +10,5 @@ The sound playback code was originally written by David Johnson-Davies
 (www.technoblogy.com) in 2017 and modified to add the Microdrive sound data
 and set the correct playback speed.
 
+See: http://www.technoblogy.com/show?QBB
+
