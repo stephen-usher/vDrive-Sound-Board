@@ -1,0 +1,178 @@
+
+(session "vDrive-Sound-Board.ses"
+  (base_design "vDrive-Sound-Board.dsn")
+  (placement
+    (resolution um 10)
+    (component "Package_DIP:DIP-8_W7.62mm"
+      (place U1 1163000 -616000 front 0)
+    )
+    (component "Package_TO_SOT_THT:TO-92_Inline"
+      (place Q1 1132000 -502000 front 90)
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical
+      (place J3 1125000 -685000 front 0)
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+      (place J2 1190000 -442000 front 90)
+      (place J1 1125000 -597000 front 180)
+    )
+    (component Capacitor_THT:CP_Radial_D8.0mm_P2.50mm
+      (place C1 1198000 -531000 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "(5.1.7)-1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net "CHIP-POWER"
+        (wire
+          (path F.Cu 2500
+            1223000 -531000
+            1239200 -547200
+            1239200 -616000
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1223000 -531000
+            1194000 -502000
+            1132000 -502000
+          )
+        )
+      )
+      (net +5V
+        (wire
+          (path B.Cu 2500
+            1143324 -531000
+            1121247 -508923
+            1121247 -476600
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1198000 -531000
+            1143324 -531000
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1143324 -531000
+            1143324 -565029
+            1136753 -571600
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1132000 -476600
+            1121247 -476600
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1125000 -571600
+            1136753 -571600
+          )
+        )
+      )
+      (net GND
+        (wire
+          (path B.Cu 2500
+            1163000 -692200
+            1163000 -680947
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1125000 -597000
+            1125000 -645760
+            1160187 -680947
+            1163000 -680947
+          )
+        )
+      )
+      (net SPK1
+        (wire
+          (path F.Cu 2500
+            1239200 -666800
+            1239200 -655547
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1215400 -442000
+            1215400 -453753
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1215400 -453753
+            1211671 -457482
+            1211671 -630831
+            1236387 -655547
+            1239200 -655547
+          )
+        )
+      )
+      (net SPK2
+        (wire
+          (path F.Cu 2500
+            1163000 -666800
+            1163000 -655547
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1190000 -442000
+            1190000 -453753
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1190000 -453753
+            1174253 -469500
+            1174253 -647108
+            1165814 -655547
+            1163000 -655547
+          )
+        )
+      )
+      (net LED
+        (wire
+          (path F.Cu 2500
+            1132000 -489300
+            1142753 -489300
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1125000 -685000
+            1125000 -673247
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1125000 -673247
+            1142753 -655494
+            1142753 -489300
+          )
+        )
+      )
+    )
+  )
+)
